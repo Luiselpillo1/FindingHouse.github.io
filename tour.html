@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Travela - Tourism Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Registrarse</small></a>
+                        <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Ingresar</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> Herramientas</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> Mi perfil</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Bandeja de entrada</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notificationes</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Ajustes de cuenta</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Finding House</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Página principal</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
+                        <a href="services.html" class="nav-item nav-link">Servicios</a>
+                        <a href="packages.html" class="nav-item nav-link">Ofertas</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="destination.html" class="dropdown-item">Destino</a>
+                                <a href="tour.html" class="dropdown-item">Tour de propiedades</a>
+                                <a href="booking.html" class="dropdown-item">Agenda de cita</a>
+                                <a href="gallery.html" class="dropdown-item">Nuestras propiedades</a>
+                                <a href="guides.html" class="dropdown-item">Guias de vivienda</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+                                <a href="404.html" class="dropdown-item">Pagina 404</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                    <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Agendar ahora</a>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="carousel-header">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explora tu ciudad</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Encontremos un nuevo estilo de vida</h1>
+                                    <p class="mb-5 fs-5">Encontremos esa casa que tanto buscas, de manera más simple y sencilla</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Descubre ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Tu hogar, cada vez más cerca</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Encuentra tu casa perfecta</h1>
+                                    <p class="mb-5 fs-5">Ofreciendo las mejores opciones para tu comodidad y tranquilidad</p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Descubre ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Encuentra los mejores lugares </h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Donde quieres vivir</h1>
+                                    <p class="mb-5 fs-5"> El mejor lugar, todo lo que buscas a tu alcance, más fácil nunca se pudo </p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Descubre ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
+            <div class="container">
+                <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(19, 53, 123, 0.8);">
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 46px; transform: translateY(-50%);">Buscar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Nuestra guia de viaje</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Principal</a></li>
+                    <li class="breadcrumb-item"><a href="#">Paginas</a></li>
+                    <li class="breadcrumb-item active text-white">Guias</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Explore Tour Start -->
+        <div class="container-fluid ExploreTour py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Explora ciudades</h5>
+                    <h1 class="mb-4">ZMG</h1>
+                    <p class="mb-0">Aprovecha y compra en colonias con más de 12% de plusvalía anual, es hora de hacer crecer tu patrimonio, con nosotros.
+                    </p>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#NationalTab-1">
+                                <span class="text-dark" style="width: 250px;">Hogares de categoria nacional</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#InternationalTab-2">
+                                <span class="text-dark" style="width: 250px;">Hogares de categoria internacional</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="NationalTab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Viviendas modernas</h5>
+                                                <a href="#" class="btn-hover text-white">Conocer los lugares <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="national-plus-icon">
+                                            <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Viviendas tradicionales</h5>
+                                                <a href="#" class="btn-hover text-white">Conocer los lugares <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="national-plus-icon">
+                                            <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Un vistazo a la naturaleza</h5>
+                                                <a href="#" class="btn-hover text-white">Conocer los lugares <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="tour-offer bg-info">15% Off</div>
+                                        <div class="national-plus-icon">
+                                            <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Viviendas historicas</h5>
+                                                <a href="#" class="btn-hover text-white">Conocer los lugares <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="national-plus-icon">
+                                            <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Vivienda multi-familiares</h5>
+                                                <a href="#" class="btn-hover text-white">Conocer los lugares <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="tour-offer bg-warning">10% Off</div>
+                                        <div class="national-plus-icon">
+                                            <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="img/explore-tour-6.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Viviendas Disruptivas</h5>
+                                                <a href="#" class="btn-hover text-white">Conocer los lugares <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="national-plus-icon">
+                                            <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="InternationalTab-2" class="tab-pane fade show p-0">
+                            <div class="InternationalTour-carousel owl-carousel">
+                                <div class="international-item">
+                                    <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="international-content">
+                                        <div class="international-info">
+                                            <h5 class="text-white text-uppercase mb-2">Green Roof</h5>
+                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i> 1 propiedad(es)</a>
+                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>143+ Interesados</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="tour-offer bg-success">5% Off</div>
+                                    <div class="international-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                                <div class="international-item">
+                                    <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="international-content">
+                                        <div class="international-info">
+                                            <h5 class="text-white text-uppercase mb-2">Viviendas Enormes</h5>
+                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i> 1 propiedad(es)</a>
+                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>21+ Interesados</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="international-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                                <div class="international-item">
+                                    <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="international-content">
+                                        <div class="tour-offer bg-warning">35% Off</div>
+                                        <div class="international-info">
+                                            <h5 class="text-white text-uppercase mb-2">Viviendas en descuento</h5>
+                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i> 3 propiedad(es)</a>
+                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>133+ Interesados</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="international-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                                <div class="international-item">
+                                    <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="international-content">
+                                        <div class="international-info">
+                                            <h5 class="text-white text-uppercase mb-2">Proximas Ventas</h5>
+                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i> 3 propiedad(es)</a>
+                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>137+ Visitas</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="international-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                                <div class="international-item">
+                                    <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="international-content">
+                                        <div class="tour-offer bg-info">20% Off</div>
+                                        <div class="international-info">
+                                            <h5 class="text-white text-uppercase mb-2">Complejos Departamentales</h5>
+                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i> 12 propiedad(es)</a>
+                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>26+ Interesados</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="international-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Explore Tour Start -->
+
+        <!-- Subscribe Start -->
+        <div class="container-fluid subscribe py-5">
+            <div class="container text-center py-5">
+                <div class="mx-auto text-center" style="max-width: 900px;">
+                    <h5 class="subscribe-title px-3">Suscribirse</h5>
+                    <h1 class="text-white mb-4">Nuestro Boletín de Noticias</h1>
+                    <p class="text-white mb-5">Aprovecha la oportunidad de tu vida</p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu correo electrónico">
+                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Contacto</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> 123 Calle, Guadalajara, Jalisco</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> business@rea.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> 33 2078 9181</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> 33 2078 9302</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Empresa</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sobre nosotros </a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Carreras</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Presentacion</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Tarjetas de regalo</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Revistas</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Soporte</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contacto</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Legales</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Politica de Privacidad</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terminos y Condiciones</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Mapa</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Politica de cookies</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <div class="row gy-3 gx-2 mb-4">
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">Arabic</option>
+                                                <option value="2">German</option>
+                                                <option value="3">Greek</option>
+                                                <option value="3">New York</option>
+                                            </select>
+                                            <label for="select1">English</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">USD</option>
+                                                <option value="2">EUR</option>
+                                                <option value="3">INR</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                            <label for="select1">$</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4 class="text-white mb-3">Pagos</h4>
+                            <div class="footer-bank-card">
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright text-body py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">House Finding</a>, Todos los derechos reservados.
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Diseñado por <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
